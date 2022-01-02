@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-import Product from '../components/Product';
+import ProductCategory from '../components/ProductCategory';
 import Filters from '../components/Filters';
 
 export default function Home({ data }) {
@@ -20,7 +20,9 @@ export default function Home({ data }) {
   const generateProducts = () => {
     const products = [];
     for (let item of productNames) {
-      products.push(<Product key={item} productName={item} data={data} />);
+      products.push(
+        <ProductCategory key={item} productName={item} data={data} />
+      );
     }
     return products;
   };
