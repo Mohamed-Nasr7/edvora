@@ -5,7 +5,7 @@ function Product({ productName, data }) {
   return (
     <div className={productStyles.container}>
       <h3 className={productStyles.title}>{productName}</h3>
-      <div>Cards</div>
+      <div className={productStyles.cardsContainer}></div>
     </div>
   );
 }
