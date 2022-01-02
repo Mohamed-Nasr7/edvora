@@ -3,6 +3,7 @@ import productStyles from '../styles/Product.module.css';
 
 function ProductCategory({ productName, data }) {
   const [productItems, setProductItems] = useState();
+  const [productsCount, setProductsCount] = useState();
 
   useEffect(() => {
     const products = data.filter(product => {
