@@ -4,7 +4,7 @@ import productStyles from '../styles/Product.module.css';
 function Product({ productName, data }) {
   return (
     <div>
-      <h4 className={productStyles.title}>{productName}</h4>
+      <h3 className={productStyles.title}>{productName}</h3>
       <div>Cards</div>
     </div>
   );
