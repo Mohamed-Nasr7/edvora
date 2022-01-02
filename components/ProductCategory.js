@@ -2,10 +2,13 @@ import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/Product.module.css';
 
 function ProductCategory({ productName, data }) {
+  const [productItems, setProductItems] = useState();
+
   useEffect(() => {
-    const productItems = data.map(product => {
-      if (product.product_name === productName) return <p>{productName}</p>;
+    const products = data.map(product => {
+      if (product.product_name === productName) return product;
     });
+    setProductItems(products);
   }, []);
 
   return (
