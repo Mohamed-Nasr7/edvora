@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/Product.module.css';
 
 function Product({ productName, data }) {
