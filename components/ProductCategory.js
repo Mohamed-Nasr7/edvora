@@ -5,8 +5,8 @@ function ProductCategory({ productName, data }) {
   const [productItems, setProductItems] = useState();
 
   useEffect(() => {
-    const products = data.map(product => {
-      if (product.product_name === productName) return product;
+    const products = data.filter(product => {
+      return product.product_name === productName;
     });
     setProductItems(products);
   }, []);
