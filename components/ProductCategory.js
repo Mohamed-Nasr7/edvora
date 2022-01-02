@@ -10,6 +10,7 @@ function ProductCategory({ productName, data }) {
       return product.product_name === productName;
     });
     setProductItems(products);
+    setProductsCount(products.length);
   }, []);
 
   return (
