@@ -11,7 +11,11 @@ function ProductCategory({ productName, products }) {
   return (
     <div className={productStyles.container}>
       <h3 className={productStyles.title}>{productName}</h3>
-      <div className={productStyles.cardsContainer}></div>
+      <div className={productStyles.cardsContainer}>
+        {products.map(item => (
+          <p>{item.product_name}</p>
+        ))}
+      </div>
     </div>
   );
 }
