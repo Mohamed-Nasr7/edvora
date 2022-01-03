@@ -5,7 +5,7 @@ function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
 
   useEffect(() => {
-    console.log(productName, products);
+    setProductsCount(products.length);
   }, []);
 
   return (
