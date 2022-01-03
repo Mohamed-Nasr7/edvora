@@ -8,7 +8,7 @@ import ProductCategory from '../components/ProductCategory';
 import Filters from '../components/Filters';
 
 export default function Home({ data }) {
-  const [productNames, setProductNames] = useState();
+  const [products, setProducts] = useState();
 
   useEffect(() => {
     const products = {};
@@ -22,6 +22,7 @@ export default function Home({ data }) {
         ];
       }
     }
+    setProducts(products);
   }, []);
 
   return (
