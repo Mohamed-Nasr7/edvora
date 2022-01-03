@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/Product.module.css';
+import { Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 
 function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
