@@ -12,4 +12,5 @@
   height: 12rem;
   border-radius: 0.8rem;
   color: var(--white);
+  display: flex;
 }
