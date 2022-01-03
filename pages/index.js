@@ -25,6 +25,12 @@ export default function Home({ data }) {
     setProducts(products);
   }, []);
 
+  const generateProducts = () => {
+    return Object.entries(products).map(([key, value]) => {
+      return <ProductCategory productName={key} products={value} />;
+    });
+  };
+
   return (
     <div>
       <Head>
@@ -37,6 +43,7 @@ export default function Home({ data }) {
         <section>
           <h1 className={styles.title}>Edvora</h1>
           <h3 className={styles.subtitle}>Products</h3>
+          {products && generateProducts()}
         </section>
       </main>
     </div>
