@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/Product.module.css';
 
-function ProductCategory({ productName, data }) {
-  const [productItems, setProductItems] = useState();
+function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
 
   useEffect(() => {
-    const products = data.filter(product => {
-      return product.product_name === productName;
-    });
-    setProductItems(products);
-    setProductsCount(products.length);
+    console.log(productName, products);
   }, []);
 
   return (
