@@ -11,21 +11,18 @@ export default function Home({ data }) {
   const [productNames, setProductNames] = useState();
 
   useEffect(() => {
-    console.log(data);
-    const allProductNames = data.map(product => product.product_name);
-    const uniqueProductNames = new Set(allProductNames);
-    setProductNames(uniqueProductNames);
-  }, []);
-
-  const generateProducts = () => {
-    const products = [];
-    for (let item of productNames) {
-      products.push(
-        <ProductCategory key={item} productName={item} data={data} />
-      );
+    const products = {};
+    for (const product of data) {
+      if (!products[product.product_name]) {
+        products[product.product_name] = [product];
+      } else {
+        products[product.product_name] = [
+          ...products[product.product_name],
+          product,
+        ];
+      }
     }
-    return products;
-  };
+  }, []);
 
   return (
     <div>
@@ -39,7 +36,6 @@ export default function Home({ data }) {
         <section>
           <h1 className={styles.title}>Edvora</h1>
           <h3 className={styles.subtitle}>Products</h3>
-          {productNames && generateProducts()}
         </section>
       </main>
     </div>
