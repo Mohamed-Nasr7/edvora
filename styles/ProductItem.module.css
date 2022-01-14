@@ -2,6 +2,8 @@
   min-width: calc((70vw - 100px) / 4);
   height: 10rem;
   margin-right: 20px;
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
 }
 
 .card:first-child {
