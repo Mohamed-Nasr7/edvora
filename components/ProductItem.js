@@ -7,6 +7,7 @@ import {
   Button,
   Typography,
 } from '@mui/material';
+import product from '../styles/ProductItem.module.css';
 
 function ProductItem() {
   return (
