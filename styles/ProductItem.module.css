@@ -1,0 +1,3 @@
+.card {
+  min-width: calc((70vw - 100px) / 4);
+}
