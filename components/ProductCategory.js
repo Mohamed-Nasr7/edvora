@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/Product.module.css';
-import { Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
+import ProductItem from './ProductItem';
 
 function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
@@ -14,7 +14,7 @@ function ProductCategory({ productName, products }) {
       <h3 className={productStyles.title}>{productName}</h3>
       <div className={productStyles.cardsContainer}>
         {products.map(item => (
-          <p>{item.product_name}</p>
+          <ProductItem />
         ))}
       </div>
     </div>
