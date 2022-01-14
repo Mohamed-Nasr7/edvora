@@ -11,7 +11,7 @@ import product from '../styles/ProductItem.module.css';
 
 function ProductItem() {
   return (
-    <Card>
+    <Card className={product.card}>
       <CardMedia
         component='img'
         height='140'
