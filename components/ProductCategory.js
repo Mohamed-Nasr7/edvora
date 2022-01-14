@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import productStyles from '../styles/Product.module.css';
+import productStyles from '../styles/ProductCategory.module.css';
 import ProductItem from './ProductItem';
 
 function ProductCategory({ productName, products }) {
