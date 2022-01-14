@@ -9,8 +9,10 @@
 
 .cardsContainer {
   background-color: var(--secondary);
+  max-width: 70vw;
   height: 12rem;
   border-radius: 0.8rem;
   color: var(--white);
   display: flex;
+  overflow: hidden;
 }
