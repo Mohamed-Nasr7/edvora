@@ -10,6 +10,12 @@ function ProductCategory({ productName, products }) {
     setProductsCount(products.length);
   }, []);
 
+  const displayProducts = () => {
+    for (let index = productIndex; index < products.length; index++) {
+      console.log(products[index]);
+    }
+  };
+
   return (
     <div className={productStyles.container}>
       <h3 className={productStyles.title}>{productName}</h3>
