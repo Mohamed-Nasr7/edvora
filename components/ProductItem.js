@@ -7,11 +7,11 @@ import {
   Button,
   Typography,
 } from '@mui/material';
-import product from '../styles/ProductItem.module.css';
+import productStyles from '../styles/ProductItem.module.css';
 
 function ProductItem() {
   return (
-    <Card className={product.card}>
+    <Card className={productStyles.card}>
       <CardMedia
         component='img'
         height='140'
