@@ -14,7 +14,7 @@ function ProductCategory({ productName, products }) {
       <h3 className={productStyles.title}>{productName}</h3>
       <div className={productStyles.cardsContainer}>
         {products.map(item => (
-          <ProductItem />
+          <ProductItem key={item.time} product={item} />
         ))}
       </div>
     </div>
