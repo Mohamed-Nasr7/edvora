@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import productStyles from '../styles/ProductItem.module.css';
 
-function ProductItem() {
+function ProductItem({ product }) {
   return (
     <Card className={productStyles.card}>
       <CardMedia
