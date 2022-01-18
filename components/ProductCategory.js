@@ -4,6 +4,7 @@ import ProductItem from './ProductItem';
 
 function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
+  const [productIndex, setProductIndex] = useState(0);
 
   useEffect(() => {
     setProductsCount(products.length);
