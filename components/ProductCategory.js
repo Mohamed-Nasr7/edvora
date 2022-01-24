@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import productStyles from '../styles/ProductCategory.module.css';
 import ProductItem from './ProductItem';
+import TablePagination from '@mui/material/TablePagination';
 
 function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
