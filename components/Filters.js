@@ -1,8 +1,9 @@
+import FiltersStyles from '../styles/Filters.module.css';
+
 function Filters() {
   return (
     <div>
-      Filters
-      <p></p>
+      <p>Filters</p>
     </div>
   );
 }
