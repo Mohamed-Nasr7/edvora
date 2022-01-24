@@ -21,3 +21,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.css-pdct74-MuiTablePagination-selectLabel,
+.css-16c50h-MuiInputBase-root-MuiTablePagination-select,
+.css-levciy-MuiTablePagination-displayedRows,
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input {
+  display: none !important;
+}
