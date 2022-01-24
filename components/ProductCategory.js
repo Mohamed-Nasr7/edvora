@@ -26,6 +26,12 @@ function ProductCategory({ productName, products }) {
           <ProductItem key={item.time} product={item} />
         ))}
       </div>
+      <TablePagination
+        component='div'
+        count={productsCount}
+        page={page}
+        //onPageChange={handleChangePage}
+      />
     </div>
   );
 }
