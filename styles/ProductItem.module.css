@@ -4,6 +4,7 @@
   margin-right: 20px;
   background-color: var(--primary) !important;
   color: var(--white) !important;
+  cursor: pointer;
 }
 
 .card:first-child {
