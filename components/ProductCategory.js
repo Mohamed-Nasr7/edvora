@@ -6,6 +6,7 @@ import TablePagination from '@mui/material/TablePagination';
 function ProductCategory({ productName, products }) {
   const [productsCount, setProductsCount] = useState();
   const [productIndex, setProductIndex] = useState(0);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     setProductsCount(products.length);
