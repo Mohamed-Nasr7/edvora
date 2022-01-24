@@ -18,6 +18,8 @@ function ProductCategory({ productName, products }) {
     }
   };
 
+  const handleChangePage = (event, newPage) => setPage(newPage);
+
   return (
     <div className={productStyles.container}>
       <h3 className={productStyles.title}>{productName}</h3>
@@ -30,7 +32,7 @@ function ProductCategory({ productName, products }) {
         component='div'
         count={productsCount}
         page={page}
-        //onPageChange={handleChangePage}
+        onPageChange={handleChangePage}
       />
     </div>
   );
