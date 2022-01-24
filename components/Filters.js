@@ -3,7 +3,9 @@ import FiltersStyles from '../styles/Filters.module.css';
 function Filters() {
   return (
     <div>
-      <p>Filters</p>
+      <div className={FiltersStyles.container}>
+        <p>Filters</p>
+      </div>
     </div>
   );
 }
