@@ -4,7 +4,7 @@ function Filters() {
   return (
     <div>
       <div className={FiltersStyles.container}>
-        <p>Filters</p>
+        <p className={FiltersStyles.title}>Filters</p>
       </div>
     </div>
   );
