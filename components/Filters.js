@@ -1,4 +1,5 @@
 import FiltersStyles from '../styles/Filters.module.css';
+import { Button, Menu, MenuItem } from '@mui/material';
 
 function Filters() {
   return (
