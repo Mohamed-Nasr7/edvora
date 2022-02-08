@@ -22,6 +22,7 @@ function Filters() {
           aria-haspopup='true'
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClick}
+          className={FiltersStyles.dropdownBtn}
         >
           Dashboard
         </Button>
