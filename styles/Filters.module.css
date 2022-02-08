@@ -20,6 +20,8 @@
 }
 
 .dropdownBtn {
+  width: 100%;
   color: var(--white) !important;
   text-transform: initial !important;
+  display: flex;
 }
