@@ -9,6 +9,21 @@ function Filters() {
     ThirdAnchorEl: null,
   };
   const [anchorElements, dispatch] = useReducer(reducer, initialState);
+  function reducer(state, action) {
+    switch (action.type) {
+      case 'FIRST_EL':
+        return { ...state, firstAnchorEl: action.payload };
+
+      case 'SECOND_EL':
+        return { ...state, secondAnchorEl: action.payload };
+
+      case 'THIRD_EL':
+        return { ...state, thirdAnchorEl: action.payload };
+
+      default:
+        return state;
+    }
+  }
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
