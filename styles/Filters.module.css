@@ -18,3 +18,8 @@
   margin: 0;
   padding-bottom: 0.6rem;
 }
+
+.dropdownBtn {
+  color: var(--white) !important;
+  text-transform: initial !important;
+}
