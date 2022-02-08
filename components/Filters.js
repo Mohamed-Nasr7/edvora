@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import FiltersStyles from '../styles/Filters.module.css';
 import { Button, Menu, MenuItem } from '@mui/material';
 
 function Filters() {
+  const [anchorElements, dispatch] = useReducer(reducer, initialState);
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = event => {
