@@ -66,14 +66,16 @@ function Filters() {
           id='basic-menu'
           anchorEl={anchorEl}
           open={firstOpen}
-          onClose={handleClose}
+          onClose={() => handleClose('FIRST_EL')}
           MenuListProps={{
             'aria-labelledby': 'basic-button',
           }}
         >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
+          <MenuItem onClick={() => handleClose('FIRST_EL')}>Profile</MenuItem>
+          <MenuItem onClick={() => handleClose('FIRST_EL')}>
+            My account
+          </MenuItem>
+          <MenuItem onClick={() => handleClose('FIRST_EL')}>Logout</MenuItem>
         </Menu>
       </div>
     </div>
