@@ -25,8 +25,8 @@ function Filters() {
     }
   }
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  //const [anchorEl, setAnchorEl] = React.useState(null);
+  const firstOpen = Boolean(anchorElements.firstAnchorEl);
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
@@ -40,9 +40,9 @@ function Filters() {
         <p className={FiltersStyles.title}>Filters</p>
         <Button
           id='basic-button'
-          aria-controls={open ? 'basic-menu' : undefined}
+          aria-controls={firstOpen ? 'basic-menu' : undefined}
           aria-haspopup='true'
-          aria-expanded={open ? 'true' : undefined}
+          aria-expanded={firstOpen ? 'true' : undefined}
           onClick={handleClick}
           className={FiltersStyles.dropdownBtn}
         >
@@ -51,7 +51,7 @@ function Filters() {
         <Menu
           id='basic-menu'
           anchorEl={anchorEl}
-          open={open}
+          open={firstOpen}
           onClose={handleClose}
           MenuListProps={{
             'aria-labelledby': 'basic-button',
