@@ -34,7 +34,7 @@ function Filters() {
   //   setAnchorEl(null);
   // };
 
-  const handleClick = (event, action) => {
+  const handleClick = (action, event) => {
     dispatch({
       type: action,
       payload: event.currentTarget,
@@ -50,7 +50,7 @@ function Filters() {
           aria-controls={firstOpen ? 'basic-menu' : undefined}
           aria-haspopup='true'
           aria-expanded={firstOpen ? 'true' : undefined}
-          onClick={handleClick}
+          onClick={event => handleClick('FIRST_EL', event)}
           className={FiltersStyles.dropdownBtn}
         >
           Dashboard
