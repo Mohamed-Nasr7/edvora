@@ -41,6 +41,13 @@ function Filters() {
     });
   };
 
+  const handleClose = action => {
+    dispatch({
+      type: action,
+      payload: null,
+    });
+  };
+
   return (
     <div>
       <div className={FiltersStyles.container}>
