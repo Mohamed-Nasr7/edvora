@@ -34,6 +34,13 @@ function Filters() {
   //   setAnchorEl(null);
   // };
 
+  const handleClick = (event, action) => {
+    dispatch({
+      type: action,
+      payload: event.currentTarget,
+    });
+  };
+
   return (
     <div>
       <div className={FiltersStyles.container}>
