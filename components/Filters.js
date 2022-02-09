@@ -25,14 +25,14 @@ function Filters() {
     }
   }
 
-  //const [anchorEl, setAnchorEl] = React.useState(null);
   const firstOpen = Boolean(anchorElements.firstAnchorEl);
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
+  //const [anchorEl, setAnchorEl] = React.useState(null);
+  // const handleClick = event => {
+  //   setAnchorEl(event.currentTarget);
+  // };
+  // const handleClose = () => {
+  //   setAnchorEl(null);
+  // };
 
   return (
     <div>
