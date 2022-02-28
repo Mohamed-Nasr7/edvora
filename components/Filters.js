@@ -60,7 +60,7 @@ function Filters() {
           onClick={event => handleClick('FIRST_EL', event)}
           className={FiltersStyles.dropdownBtn}
         >
-          Dashboard
+          Products
         </Button>
         <Menu
           id='basic-menu'
