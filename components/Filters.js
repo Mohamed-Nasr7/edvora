@@ -52,6 +52,28 @@ function Filters() {
     <div>
       <div className={FiltersStyles.container}>
         <p className={FiltersStyles.title}>Filters</p>
+        {[
+          {
+            label: 'Products',
+            action: 'FIRST_EL',
+          },
+          {
+            label: 'State',
+            action: 'SECOND_EL',
+          },
+          {
+            label: 'City',
+            action: 'THIRD_EL',
+          },
+        ].map((item, index) => (
+          <FiltersDropdown
+            label={item.label}
+            action={item.action}
+            handleClick={handleClick}
+            handleClose={handleClose}
+            open={open[index]}
+          />
+        ))}
       </div>
     </div>
   );
