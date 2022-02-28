@@ -64,7 +64,7 @@ function Filters() {
         </Button>
         <Menu
           id='basic-menu'
-          anchorEl={anchorEl}
+          anchorEl={anchorElements.firstAnchorEl}
           open={firstOpen}
           onClose={() => handleClose('FIRST_EL')}
           MenuListProps={{
