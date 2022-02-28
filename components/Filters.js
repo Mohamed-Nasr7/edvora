@@ -3,7 +3,7 @@ import FiltersStyles from '../styles/Filters.module.css';
 import { Button, Menu, MenuItem } from '@mui/material';
 
 function Filters() {
-  initialState = {
+  const initialState = {
     firstAnchorEl: null,
     secondAnchorEl: null,
     ThirdAnchorEl: null,
