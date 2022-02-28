@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import FiltersDropdown from './FiltersDropdown';
 import FiltersStyles from '../styles/Filters.module.css';
 
 function Filters() {
