@@ -2,7 +2,7 @@ import React from 'react';
 import FiltersStyles from '../styles/Filters.module.css';
 import { Button, Menu, MenuItem } from '@mui/material';
 
-function FiltersDropdown() {
+function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
   return (
     <div>
       <Button
