@@ -24,7 +24,7 @@ function Filters() {
     }
   }
 
-  const firstOpen = Boolean(anchorElements.firstAnchorEl);
+  const open = Object.values(anchorElements);
   //const [anchorEl, setAnchorEl] = React.useState(null);
   // const handleClick = event => {
   //   setAnchorEl(event.currentTarget);
