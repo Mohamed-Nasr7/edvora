@@ -22,6 +22,8 @@
 .dropdownBtn {
   width: 100%;
   color: var(--white) !important;
+  background-color: var(--primary);
+  margin-top: 0.6rem;
   text-transform: initial !important;
   display: block;
   text-align: left;
