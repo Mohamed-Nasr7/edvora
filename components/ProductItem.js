@@ -20,7 +20,7 @@ function ProductItem({ product }) {
       />
       <CardContent>
         <Typography gutterBottom variant='h5' component='div'>
-          Lizard
+          {product.product_name}
         </Typography>
         <Typography variant='body2' color='text.secondary'></Typography>
       </CardContent>
