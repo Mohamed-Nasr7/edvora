@@ -6,7 +6,7 @@ function Filters() {
   const initialState = {
     firstAnchorEl: null,
     secondAnchorEl: null,
-    ThirdAnchorEl: null,
+    thirdAnchorEl: null,
   };
   const [anchorElements, dispatch] = useReducer(reducer, initialState);
   function reducer(state, action) {
