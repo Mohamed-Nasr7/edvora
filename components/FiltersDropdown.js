@@ -13,7 +13,7 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
         onClick={event => handleClick('FIRST_EL', event)}
         className={FiltersStyles.dropdownBtn}
       >
-        Products
+        {label}
       </Button>
       <Menu
         id='basic-menu'
