@@ -10,7 +10,7 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup='true'
         aria-expanded={open ? 'true' : undefined}
-        onClick={event => handleClick('FIRST_EL', event)}
+        onClick={event => handleClick(action, event)}
         className={FiltersStyles.dropdownBtn}
       >
         {label}
@@ -19,14 +19,14 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
         id='basic-menu'
         anchorEl={open}
         open={open}
-        onClose={() => handleClose('FIRST_EL')}
+        onClose={() => handleClose(action)}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={() => handleClose('FIRST_EL')}>Profile</MenuItem>
-        <MenuItem onClick={() => handleClose('FIRST_EL')}>My account</MenuItem>
-        <MenuItem onClick={() => handleClose('FIRST_EL')}>Logout</MenuItem>
+        <MenuItem onClick={() => handleClose(action)}>Profile</MenuItem>
+        <MenuItem onClick={() => handleClose(action)}>My account</MenuItem>
+        <MenuItem onClick={() => handleClose(action)}>Logout</MenuItem>
       </Menu>
     </div>
   );
