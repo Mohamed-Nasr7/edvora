@@ -4,7 +4,7 @@ import { Button, Menu, MenuItem } from '@mui/material';
 
 function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
   return (
-    <div>
+    <>
       <Button
         id='basic-button'
         aria-controls={open ? 'basic-menu' : undefined}
@@ -28,7 +28,7 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
         <MenuItem onClick={() => handleClose(action)}>My account</MenuItem>
         <MenuItem onClick={() => handleClose(action)}>Logout</MenuItem>
       </Menu>
-    </div>
+    </>
   );
 }
 
