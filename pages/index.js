@@ -9,6 +9,7 @@ import Filters from '../components/Filters';
 
 export default function Home({ data }) {
   const [products, setProducts] = useState();
+  const [selectedProduct, setSelectedProduct] = useState();
 
   useEffect(() => {
     const products = {};
