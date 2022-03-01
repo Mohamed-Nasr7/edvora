@@ -7,9 +7,9 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
     <div>
       <Button
         id='basic-button'
-        aria-controls={firstOpen ? 'basic-menu' : undefined}
+        aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup='true'
-        aria-expanded={firstOpen ? 'true' : undefined}
+        aria-expanded={open ? 'true' : undefined}
         onClick={event => handleClick('FIRST_EL', event)}
         className={FiltersStyles.dropdownBtn}
       >
@@ -17,8 +17,8 @@ function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
       </Button>
       <Menu
         id='basic-menu'
-        anchorEl={anchorElements.firstAnchorEl}
-        open={firstOpen}
+        anchorEl={open}
+        open={open}
         onClose={() => handleClose('FIRST_EL')}
         MenuListProps={{
           'aria-labelledby': 'basic-button',
