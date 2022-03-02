@@ -40,7 +40,7 @@ export default function Home({ data }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <Filters />
+        <Filters products={products} selectedProduct={selectedProduct} />
         <section>
           <h1 className={styles.title}>Edvora</h1>
           <h3 className={styles.subtitle}>Products</h3>
