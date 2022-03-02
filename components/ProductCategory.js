@@ -12,7 +12,7 @@ function ProductCategory({ productName, products }) {
   }, []);
 
   const displayProducts = () => {
-    for (let index = 0; index < products.length; index++) {
+    for (let index = page * 4; index < page * 4 + 4; index++) {
       console.log(products[index]);
     }
   };
