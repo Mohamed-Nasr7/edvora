@@ -10,6 +10,7 @@ import Filters from '../components/Filters';
 export default function Home({ data }) {
   const [products, setProducts] = useState();
   const [selectedProduct, setSelectedProduct] = useState();
+  const productsContext = createContext();
 
   useEffect(() => {
     const products = {};
