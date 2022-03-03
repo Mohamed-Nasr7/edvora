@@ -25,9 +25,10 @@ function ProductCategory({ productName, products }) {
     <div className={productStyles.container}>
       <h3 className={productStyles.title}>{productName}</h3>
       <div className={productStyles.cardsContainer}>
-        {products.map(item => (
-          <ProductItem key={item.time} product={item} />
-        ))}
+        {products &&
+          displayProducts().map(item => (
+            <ProductItem key={item.time} product={item} />
+          ))}
       </div>
       {productsCount && (
         <TablePagination
