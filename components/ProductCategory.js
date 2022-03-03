@@ -12,8 +12,9 @@ function ProductCategory({ productName, products }) {
   }, []);
 
   const displayProducts = () => {
+    let productsPerPage = [];
     for (let index = page * 4; index < page * 4 + 4; index++) {
-      console.log(products[index]);
+      productsPerPage.push(products[index]);
     }
   };
 
