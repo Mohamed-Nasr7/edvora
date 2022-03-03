@@ -10,7 +10,7 @@ import Filters from '../components/Filters';
 export default function Home({ data }) {
   const [products, setProducts] = useState();
   const [selectedProduct, setSelectedProduct] = useState();
-  const productsContext = createContext();
+  const ProductsContext = createContext();
 
   useEffect(() => {
     const products = {};
@@ -41,12 +41,14 @@ export default function Home({ data }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <Filters products={products} selectedProduct={selectedProduct} />
-        <section>
-          <h1 className={styles.title}>Edvora</h1>
-          <h3 className={styles.subtitle}>Products</h3>
-          {products && generateProducts()}
-        </section>
+        <ProductsContext.Provider>
+          <Filters products={products} selectedProduct={selectedProduct} />
+          <section>
+            <h1 className={styles.title}>Edvora</h1>
+            <h3 className={styles.subtitle}>Products</h3>
+            {products && generateProducts()}
+          </section>
+        </ProductsContext.Provider>
       </main>
     </div>
   );
