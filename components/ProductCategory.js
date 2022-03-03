@@ -16,6 +16,7 @@ function ProductCategory({ productName, products }) {
     for (let index = page * 4; index < page * 4 + 4; index++) {
       productsPerPage.push(products[index]);
     }
+    return productsPerPage;
   };
 
   const handleChangePage = (event, newPage) => setPage(newPage);
