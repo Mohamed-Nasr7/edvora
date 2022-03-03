@@ -22,7 +22,9 @@ function ProductItem({ product }) {
         <Typography gutterBottom variant='h5' component='div'>
           {product.product_name}
         </Typography>
-        <Typography variant='body2' color='text.secondary'></Typography>
+        <Typography variant='body2' color='text.secondary'>
+          {product.address.city}
+        </Typography>
       </CardContent>
     </Card>
   );
