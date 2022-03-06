@@ -42,7 +42,7 @@ export default function Home({ data }) {
       </Head>
       <main className={styles.main}>
         <ProductsContext.Provider>
-          <Filters products={products} selectedProduct={selectedProduct} />
+          <Filters />
           <section>
             <h1 className={styles.title}>Edvora</h1>
             <h3 className={styles.subtitle}>Products</h3>
