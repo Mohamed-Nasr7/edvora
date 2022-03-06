@@ -41,7 +41,7 @@ export default function Home({ data }) {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className={styles.main}>
-        <ProductsContext.Provider>
+        <ProductsContext.Provider value={{ products, selectedProduct }}>
           <Filters />
           <section>
             <h1 className={styles.title}>Edvora</h1>
