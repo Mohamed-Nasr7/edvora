@@ -10,6 +10,8 @@ function Filters() {
     thirdAnchorEl: null,
   };
   const [anchorElements, dispatch] = useReducer(reducer, initialState);
+  const productsContext = useContext(ProductsContext);
+
   function reducer(state, action) {
     switch (action.type) {
       case 'FIRST_EL':
