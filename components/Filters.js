@@ -1,5 +1,6 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useContext } from 'react';
 import FiltersDropdown from './FiltersDropdown';
+import { ProductsContext } from '../pages';
 import FiltersStyles from '../styles/Filters.module.css';
 
 function Filters() {
