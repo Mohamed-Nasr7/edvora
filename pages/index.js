@@ -16,11 +16,11 @@ export const getStaticProps = async () => {
     },
   };
 };
+export const ProductsContext = createContext();
 
 export default function Home({ data }) {
   const [products, setProducts] = useState();
   const [selectedProduct, setSelectedProduct] = useState();
-  const ProductsContext = createContext();
 
   useEffect(() => {
     const products = {};
