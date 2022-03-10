@@ -7,6 +7,16 @@ import styles from '../styles/Home.module.css';
 import ProductCategory from '../components/ProductCategory';
 import Filters from '../components/Filters';
 
+export const getStaticProps = async () => {
+  const response = await fetch('https://assessment-edvora.herokuapp.com/');
+  const data = await response.json();
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
 export default function Home({ data }) {
   const [products, setProducts] = useState();
   const [selectedProduct, setSelectedProduct] = useState();
@@ -53,13 +63,3 @@ export default function Home({ data }) {
     </div>
   );
 }
-
-export const getStaticProps = async () => {
-  const response = await fetch('https://assessment-edvora.herokuapp.com/');
-  const data = await response.json();
-  return {
-    props: {
-      data,
-    },
-  };
-};
