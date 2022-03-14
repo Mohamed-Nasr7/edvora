@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import FiltersStyles from '../styles/Filters.module.css';
 import { Button, Menu, MenuItem } from '@mui/material';
+import { ProductsContext } from '../pages';
 
 function FiltersDropdown({ label, action, handleClick, handleClose, open }) {
+  const productsContext = useContext(ProductsContext);
+
   return (
     <>
       <Button

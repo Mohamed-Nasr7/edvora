@@ -1,6 +1,5 @@
-import React, { useReducer, useContext } from 'react';
+import React, { useReducer } from 'react';
 import FiltersDropdown from './FiltersDropdown';
-import { ProductsContext } from '../pages';
 import FiltersStyles from '../styles/Filters.module.css';
 
 function Filters() {
@@ -10,7 +9,6 @@ function Filters() {
     thirdAnchorEl: null,
   };
   const [anchorElements, dispatch] = useReducer(reducer, initialState);
-  const productsContext = useContext(ProductsContext);
 
   function reducer(state, action) {
     switch (action.type) {
